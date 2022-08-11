@@ -49,6 +49,9 @@ header {
 /* Стилі панелі навігації */
 .header .hatpage {
   color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header .hatpage:hover,
 .header .hatpage:focus {
@@ -131,10 +134,10 @@ text-transform: uppercase;
   color: var(--color-white);
 }
 .footer-cont {
-  color: color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
 }
 .footer-background .footer-cont:hover,
 .footer-background .footer-cont:focus {
