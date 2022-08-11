@@ -98,9 +98,23 @@ header {
   font-weight: 700;
   text-align: center;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
+  letter-spacing: 0.06;
+  cursor: pointer;
 }
 /* Стилі другої секції - наші переваги */
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .sec-sec-head {
 font-weight: 700;
 font-size: 14px;
@@ -126,14 +140,25 @@ text-transform: uppercase;
   font-size: 36px;
   line-height: 1.16;
 }
+.four-sec-head {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.fourth-sec-page {
+  font-size: 16px;
+  line-height: 1.18;
+}
 /* Стилі футера */
 .footer-background {
   background-color: var(--section-color-black);
 }
 .footer-adr {
   color: var(--color-white);
+  font-style: normal;
 }
 .footer-cont {
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   letter-spacing: 0.02em;
