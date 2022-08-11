@@ -70,14 +70,10 @@ header {
 .header .cont:focus {
   color: var(--accent-color);
 }
-
-
-
 /* Стилі першої секції */
 .first-part {
   background-color: var(--section-color-black);
 }
-
 .first-part-title {
   
   color: var(--color-white);
@@ -168,7 +164,6 @@ text-transform: uppercase;
 .footer-background .footer-cont:focus {
   color: var(--accent-color);
 }
-
 .footer-background .active {
   color: var(--accent-color);
 }
