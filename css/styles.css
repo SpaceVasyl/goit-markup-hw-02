@@ -8,6 +8,37 @@
   --second-text-color-grey: #757575;
   --color-white: #FFFFFF;
 }
+/* Налаштовуємо правильний розмір блоку */
+html {
+  box-sizing: border-box;
+}
+/* Скидання всіх марджинів та паддингів */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /* Налаштування основного шрифту для наслідування */
 body {
   font-family: "roboto", sans-serif;
@@ -24,7 +55,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #000
+  color: #000;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* Колір першої половини лого в хедері */
 .blue {
@@ -70,6 +104,30 @@ header {
 .header .cont:focus {
   color: var(--accent-color);
 }
+/* Позиціонування хедеру */
+.header-position {
+  display: flex;
+  align-items: center;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.navig-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-left: 93px;
+}
+.adress-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-left: auto;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Стилі першої секції */
 .first-part {
   background-color: var(--section-color-black);
@@ -97,6 +155,13 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06;
   cursor: pointer;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 4px;
+}
+.first-part-box {
+  text-align: center;
+  padding: 106px 0;
 }
 /* Стилі другої секції - наші переваги */
 .hidden {
@@ -116,34 +181,54 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 
 .sec-sec-page {
   color: var(--second-text-color-grey)
+}
+.second-section-list {
+  display: flex;
+  text-align: left;
+  gap: 30px;
 }
 /* Стилі третьої секції - Що ми робимо/чим ми займаємося */
 .third-sec-head {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  margin-top: 118px;
+  margin-bottom: 50px;
+}
+.third-sec-list {
+  display: flex;
+  gap: 30px;
 }
 /* Стилі четвертої секції */
 .fourth-sec {
   background-color: var(--section-color-grey);
+  padding: 94px 0;
 }
 .fourth-sec-head {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 .four-sec-head {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .fourth-sec-page {
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .hidden {
   position: absolute;
@@ -157,7 +242,21 @@ text-transform: uppercase;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.fourth-list-flex {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
 
+.card-list {
+  background-color: var(--color-white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.cards-employers {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 /* Кнопки */
 .alpaka {
   background-color: var(--section-color-grey);
@@ -168,6 +267,9 @@ text-transform: uppercase;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 50px;
 }
 
 .first-sec .alpaka:hover,
@@ -196,6 +298,10 @@ text-transform: uppercase;
 .footer-background {
   background-color: var(--section-color-black);
 }
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
 .footer-adr {
   color: var(--color-white);
   font-style: normal;
@@ -213,4 +319,40 @@ text-transform: uppercase;
 }
 .footer-background .active {
   color: var(--accent-color);
+}
+.footer-positioning {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  padding: 0;
+}
+.footer-item {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-contakts {
+  margin-bottom: 9px;
+}
+.first-sec .portfolio-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.borderline {
+  border: 1px ;
+  border-color: #eeeeee;
+  background-color: var(--color-white);
+}
+.cards-commertials {
+  gap: 4px;
+  margin-top: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }

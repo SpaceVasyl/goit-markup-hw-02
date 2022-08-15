@@ -14,127 +14,154 @@
 <body>
     <header class="header">
         <!--Логотип-->
-        <a href="index.html" class="logo un-underline"><span class="blue">Web</span>Studio</a>
-        <nav>
-            <!--Посилання в шапці сторінки-->
-            <ul class="list">
+        <div class="conteiner header-position">
+            <a href="index.html" class="logo un-underline"><span class="blue">Web</span>Studio</a>
+            <nav>
+                <!--Посилання в шапці сторінки-->
+                <ul class="list navig-list">
+                    <li>
+                        <a href="./index.html" class="link un-underline hatpage">студія</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="link un-underline hatpage active">портфоліо</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link un-underline hatpage">контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="list adress-list">
                 <li>
-                    <a href="./index.html" class="link un-underline hatpage ">студія</a>
+                    <a href="mailto:info@devstudio.com" class="un-underline cont">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="link un-underline hatpage active">портфоліо</a>
-                </li>
-                <li>
-                    <a href="#" class="link un-underline hatpage">контакти</a>
+                    <a href="tel:+380961111111" class="un-underline cont">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li>
-                <a href="mailto:info@devstudio.com" class="un-underline cont">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111" class="un-underline cont">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
+    
     </header>
     <main>
-        <section class="first-sec">
+        <div class="conteiner">
+            <section class="first-sec">
             <h1 class="hidden">Портфоліо</h1>
             <!-- Кнопки в першій секції -->
-            <ul class="list"> 
+            <ul class="list portfolio-buttons"> 
                 <li><button type="button" class="alpaka">Усі</button></li>
                 <li><button type="button" class="alpaka">Веб-сайти</button></li>
                 <li><button type="button" class="alpaka">Додатки</button></li>
                 <li><button type="button" class="alpaka">Дизайн</button></li>
                 <li><button type="button" class="alpaka">Маркетинг</button></li>
             </ul>
-            <ul class="list">
+            <ul class="list projects-list">
                 <!-- Проекти- фотопосилання -->
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-icons.jpg" alt="Технокряк" width="370" height="294">
-                        <h2 class="section-two-head">Технокряк</h2>
-                        <p class="section-two-string">Веб-сайт</p>
+                        <div class="cards-commertials">
+                            <h2 class="section-two-head">Технокряк</h2>
+                            <p class="section-two-string">Веб-сайт</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-lebronn.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                        <h2 class="section-two-head">Постер New Orlean vs Golden Star</h2>
-                        <p class="section-two-string">Дизайн</p>
+                        <div class="cards-commertials">
+                            <h2 class="section-two-head">Постер New Orlean vs Golden Star</h2>
+                            <p class="section-two-string">Дизайн</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-fish.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <h2 class="section-two-head">Ресторан Seafood</h2>
-                        <p class="section-two-string">Додаток</p>
+                        <div class="cards-commertials">
+                            <h2 class="section-two-head">Ресторан Seafood</h2>
+                            <p class="section-two-string">Додаток</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
+                        
                         <img src="./images/img-headphones.jpg" alt="Проєкт Prime" width="370" height="294">
-                        <h2 class="section-two-head">Проєкт Prime</h2>
-                        <p class="section-two-string">Маркетинг</p>
+                        <div class="cards-commertials">
+                            <h2 class="section-two-head">Проєкт Prime</h2>
+                            <p class="section-two-string">Маркетинг</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
+                        <div class="cards-commertials">
                         <h2 class="section-two-head">Проєкт Boxes</h2>
                         <p class="section-two-string">Додаток</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-screen.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                        <div class="cards-commertials">
                         <h2 class="section-two-head">Inspiration has no Borders</h2>
                         <p class="section-two-string">Веб-сайт</p>
+                    </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-magaz.jpg" alt="Видання Limited Edition" width="370" height="294">
-                        <h2 class="section-two-head">Видання Limited Edition</h2>
-                        <p class="section-two-string">Дизайн</p>
+                        <div class="cards-commertials">
+                            <h2 class="section-two-head">Видання Limited Edition</h2>
+                            <p class="section-two-string">Дизайн</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-lable.jpg" alt="Проєкт LAB" width="370" height="294">
+                        <div class="cards-commertials">
                         <h2 class="section-two-head">Проєкт LAB</h2>
                         <p class="section-two-string">Маркетинг</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="borderline">
                     <a href="#" class="un-underline">
                         <img src="./images/img-laptop.jpg" alt="Growing Business" width="370" height="294">
+                        <div class="cards-commertials">
                         <h2 class="section-two-head">Growing Business</h2>
                         <p class="section-two-string">Додаток</p>
+                        </div>
                     </a>
                 </li>
             </ul>
-        </section>
+            </section>
+        </div>
     </main>
-    <footer class="footer-background">
-        <!--Нижня частина сторінки-->
-        <!--Лого--> <a class="logo un-underline" href="index.html"><span class="blue">Web</span><span
+<footer class="footer-background">
+    <!--Нижня частина сторінки-->
+    <div class="conteiner footer-positioning">
+        <!--Лого-->
+        <a class="logo un-underline logo-footer" href="index.html"><span class="blue">Web</span><span
                 class="logo-white">Studio</span></a>
         <address>
-            <ul class="list">
-                <li>
-                    <a href="https://bit.ly/3pXMvUd" class="un-underline address footer-adr">м. Київ, пр-т Лесі Українки,
-                        26</a>
+            <ul class="list footer-list">
+                <li class="footer-item">
+                    <a href="https://bit.ly/3pXMvUd" class="un-underline address footer-adr">м. Київ, пр-т Лесі
+                        Українки, 26</a>
                 </li>
-                <li>
+                <li class="footer-contakts">
                     <a href="mailto:info@devstudio.com" class="un-underline footer-cont">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111" class="un-underline footer-cont">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="un-underline footer-cont numb">+38 096 111 11 11</a>
                 </li>
             </ul>
         </address>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
