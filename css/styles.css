@@ -1,4 +1,4 @@
-/* Кольори для макету */
+/* Colors for pages */
 :root {
   --accent-color: #2196F3;
   --primary-text-color: #212121;
@@ -153,7 +153,7 @@ section {
   text-align: center;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   cursor: pointer;
   margin-top: 30px;
   border: 0;
