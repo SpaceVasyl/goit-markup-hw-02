@@ -64,8 +64,6 @@ body {
   line-height: 1.2;
   color: #000;
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 /* Колір першої половини лого в хедері */
 .blue {
@@ -86,6 +84,11 @@ body {
 /* Задали колір фону хедера */
 header {
   background-color: var(--color-white);
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* Стилі панелі навігації */
 .header .hatpage {
@@ -115,9 +118,6 @@ header {
 .header-position {
   display: flex;
   align-items: center;
-  border-bottom-color: #ececec;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 }
 .navig-list {
   display: flex;
@@ -268,9 +268,8 @@ margin-bottom: 10px;
 }
 /* Кнопки */
 .alpaka {
+  font-family: inherit;
   background-color: var(--section-color-grey);
-  width: 130px;
-  height: 38px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -278,7 +277,7 @@ margin-bottom: 10px;
   cursor: pointer;
   border: 0;
   border-radius: 4px;
-  margin-bottom: 50px;
+  padding: 6px 22px;
 }
 
 .first-sec .alpaka:hover,
@@ -344,20 +343,17 @@ margin-bottom: 10px;
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.borderline {
-  border: 1px solid #eee;
-  background-color: var(--color-white);
-}
 .cards-commertials {
-  gap: 4px;
-  margin-top: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding: 20px 24px;  
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee; 
+  background-color: var(--color-white);
 }
