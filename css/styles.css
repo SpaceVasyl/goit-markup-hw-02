@@ -32,6 +32,8 @@ ol {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 *,
@@ -39,6 +41,11 @@ ol {
 *::after {
   box-sizing: inherit;
 }
+
+img {
+  display: block;
+}
+
 /* Налаштування основного шрифту для наслідування */
 body {
   font-family: "roboto", sans-serif;
@@ -124,7 +131,7 @@ header {
   gap: 50px;
   margin-left: auto;
 }
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -193,12 +200,14 @@ margin-bottom: 10px;
   gap: 30px;
 }
 /* Стилі третьої секції - Що ми робимо/чим ми займаємося */
+.pad-top-zer {
+  padding-top: 0;
+}
 .third-sec-head {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 118px;
   margin-bottom: 50px;
 }
 .third-sec-list {
@@ -221,9 +230,7 @@ margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 10px;
 }
 .fourth-sec-page {
   font-size: 16px;
@@ -256,6 +263,8 @@ margin-bottom: 10px;
 .cards-employers {
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* Кнопки */
 .alpaka {
@@ -309,7 +318,7 @@ margin-bottom: 10px;
 .footer-cont {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
@@ -326,12 +335,9 @@ margin-bottom: 10px;
 }
 .logo-footer {
   padding: 0;
+  margin-bottom: 20px;
 }
-.footer-item {
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
-.footer-contakts {
+.footer-item  .footer-cont {
   margin-bottom: 9px;
 }
 .first-sec .portfolio-buttons {
