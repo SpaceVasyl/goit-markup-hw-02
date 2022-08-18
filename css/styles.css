@@ -306,6 +306,7 @@ margin-bottom: 10px;
 .footer-list {
   display: flex;
   flex-direction: column;
+  gap: 9px;
 }
 .footer-adr {
   color: var(--color-white);
@@ -316,7 +317,7 @@ margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   letter-spacing: 0.02em;
-  line-height: 1.14;
+  line-height: 1.14; 
 }
 .footer-background .footer-cont:hover,
 .footer-background .footer-cont:focus {
@@ -332,9 +333,6 @@ margin-bottom: 10px;
 .logo-footer {
   padding: 0;
   margin-bottom: 20px;
-}
-.footer-item  .footer-cont {
-  margin-bottom: 9px;
 }
 .first-sec .portfolio-buttons {
   display: flex;
