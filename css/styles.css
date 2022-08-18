@@ -317,8 +317,8 @@ margin-bottom: 10px;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.14; 
+  letter-spacing: 0.03em;
+  line-height: 1.71; 
 }
 .footer-background .footer-cont:hover,
 .footer-background .footer-cont:focus {
