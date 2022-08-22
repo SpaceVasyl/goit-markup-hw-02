@@ -138,10 +138,9 @@ header {
 /* Стилі першої секції */
 .first-part {
   background-color: #C4C4C4;
-  background-image: url(../images/team.jpg);
-  background-color: linear-gradient (to right, rgba (47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 .first-part-title {
   
@@ -174,6 +173,16 @@ header {
   text-align: center;
   padding: 106px 0;
 }
+.icon {
+ background-color: var(--section-color-grey);
+ border-radius: 4px;
+ padding: 25px 100px;
+}
+.radar {
+width: 70px;
+height: 70px;
+}
+
 /* Стилі другої секції - наші переваги */
 .hidden {
     position: absolute;
@@ -192,6 +201,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
+margin-top: 30px;
 margin-bottom: 10px;
 }
 
@@ -242,6 +252,34 @@ margin-bottom: 10px;
   text-align: center;
   color: var(--second-text-color-grey);
 }
+.soshial-icons {
+  display: flex;
+  margin-top: 16px;
+  gap: 10px;
+}
+.insta {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.insta-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+.insta:hover,
+.insta:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.insta:hover .insta-icon,
+.insta:focus .insta-icon {
+  fill: var(--color-white);
+}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -266,7 +304,7 @@ margin-bottom: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .cards-employers {
- padding: 30px 20px;
+ padding: 30px 32px;
 }
 /* Кнопки */
 .alpaka {
