@@ -115,25 +115,36 @@ header {
   height: 16px;
   fill: var(--second-text-color-grey);
   margin-right: 10px;
+  margin-left: 30px;
 }
 
-.header .cont {
+.cont {
   color: var(--second-text-color-grey);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.header .cont:hover,
-.header .cont:focus {
+.conte {
+  color: var(--second-text-color-grey);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.cont:hover,
+.cont:focus {
   color: var(--accent-color);
 }
-.cont:hover .convert-icon,
-.cont:focus .convert-icon {
-  fill: var(--accent-color)
+.conte:hover,
+.conte:focus {
+  color: var(--accent-color);
 }
-.cont:hover .phone-icon,
-.cont:focus .phone-icon {
-  fill: var(--accent-color)
+.cont:hover.convert-icon,
+.cont:focus.convert-icon {
+  color: var(--accent-color);
+}
+.flex-header {
+  display : flex;
+  align-items: center;
 }
 
 /* Позиціонування хедеру */
@@ -150,8 +161,9 @@ header {
 .adress-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   margin-left: auto;
+  align-items: center;
+  flex-direction: row;
 }
 .section {
   padding-top: 94px;
@@ -165,6 +177,8 @@ header {
   background-size: cover;
   width: 1600px;
   background-position: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .first-part-title {
   
