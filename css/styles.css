@@ -104,6 +104,19 @@ header {
 .header .active {
   color: var(--accent-color);
 }
+.convert-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--second-text-color-grey);
+  margin-right: 10px;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--second-text-color-grey);
+  margin-right: 10px;
+}
+
 .header .cont {
   color: var(--second-text-color-grey);
   font-weight: 500;
@@ -114,6 +127,15 @@ header {
 .header .cont:focus {
   color: var(--accent-color);
 }
+.cont:hover .convert-icon,
+.cont:focus .convert-icon {
+  fill: var(--accent-color)
+}
+.cont:hover .phone-icon,
+.cont:focus .phone-icon {
+  fill: var(--accent-color)
+}
+
 /* Позиціонування хедеру */
 .header-position {
   display: flex;
@@ -128,7 +150,7 @@ header {
 .adress-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
 }
 .section {
@@ -325,7 +347,10 @@ margin-bottom: 10px;
 .first-sec .alpaka:hover,
 .first-sec .alpaka:focus {
   background-color: var(--accent-color);
-  color: var(--color-white)
+  color: var(--color-white);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+              0 1px 2px 0 rgba(0, 0, 0, 0.08),
+              0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Заголовки секцій */
@@ -424,6 +449,12 @@ fill: #AFB1B8;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee; 
   background-color: var(--color-white);
+}
+.borderline:hover,
+.borderline:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+              0 4px 4px 0 rgba(0, 0, 0, 0.06),
+              0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .join {
