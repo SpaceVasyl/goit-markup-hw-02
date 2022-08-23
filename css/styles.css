@@ -141,6 +141,8 @@ header {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1600px;
+  background-position: 50%;
 }
 .first-part-title {
   
@@ -342,6 +344,34 @@ margin-bottom: 10px;
   line-height: 1.88;
   color: var(--second-text-color-grey)
 }
+.clients-logo-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.clients-logo {
+display: flex;
+border: 1px solid;
+border-color: #AFB1B8;
+border-radius: 4px;
+width: 170px;
+height: 92px;
+padding: 16px 32px;
+}
+.logo-icon {
+fill: #AFB1B8;
+}
+.clients-logo:hover,
+.clients-logo:focus {
+  border-color: var(--accent-color);
+}
+.clients-logo:hover .logo-icon,
+.clients-logo:focus .logo-icon {
+  fill: var(--accent-color);
+}
+
 /* Стилі футера */
 .footer-background {
   background-color: var(--section-color-black);
@@ -394,4 +424,31 @@ margin-bottom: 10px;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee; 
   background-color: var(--color-white);
+}
+
+.join {
+display: inline-block;
+font-family: Roboto;
+font-style: Bold;
+font-size: 14px;
+line-height: 16px;
+line-height: 100%;
+letter-spacing: 3%;
+color: var(--color-white);
+text-transform: uppercase;
+margin-bottom: 4px;
+}
+.round {
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+}
+.icons-color {
+fill: rgba(255, 255, 255, 1);
+}
+.flex {
+  display: flex;
+  gap: 70px;
+}
+.foot-new {
+  padding-top: 12px;
 }
